@@ -1,0 +1,112 @@
+\documentclass[10pt,a4paper]{altacv}
+\PassOptionsToPackage{dvipsnames}{xcolor}
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm,footskip=2\baselineskip}
+
+% Change the font if you want to.
+% If using pdflatex:
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[default]{lato}
+
+% Change the colours if you want to
+\definecolor{LightBlue}{HTML}{0a66c2}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{DarkBlue}{HTML}{182d48}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{DarkBlue}
+\colorlet{accent}{DarkBlue}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+\colorlet{linkcolor}{LightBlue}
+
+% Change the bullets for itemize and rating marker76
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\usepackage[colorlinks, urlcolor=LightBlue]{hyperref}
+\usepackage{ragged2e}
+
+\begin{document}
+
+\name{Pablo Ezequiel Dietz}
+\tagline{Electronic Engineer}
+\photo{3.3cm}{photo.jpg}
+\personalinfo{
+  \begin{tabular}{l|l}
+  \phone{+54 9 11 6238-7606} & \email{\href{mailto:pablo.e.dietz@gmail.com}{pablo.e.dietz@gmail.com}} \\
+  \location{Buenos Aires City, Argentina} & \linkedin{\href{https://www.linkedin.com/in/pablodietz}{linkedin.com/in/pablodietz}} \\
+   & \printinfo{\faSkype}{\href{https://join.skype.com/invite/EF9clOE0df6L}{live:.cid.b5bf85d993e907f6}}
+  \end{tabular}
+  %\github{github.com/yourid}
+  %\mailaddress{Charlone 2119 PB, C1427ABA, Buenos Aires City, Argentina}
+  %\Skype{l}
+  %\homepage{www.homepage.com}
+  %\twitter{@twitterhandle}
+  %\linkedin{linkedin.com/in/yourid}
+  %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
+%   \orcid{orcid.org/0000-0000-0000-0000}
+}
+
+%% Make the header extend all the way to the right, if you want. 
+
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+% \AtBeginEnvironment{itemize}{\small}
+
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[sidebar]{PROFILE}
+\justifying
+
+Electronic Engineer graduated at \href{http://www.fi.uba.ar/}{Buenos Aires University}, Argentina. During my studies I have acquired deep knowledge about semiconductor devices and developed special interest for telecommunications and radio-frequency applications. \\
+
+%I joined a \href{https://csc.conicet.gov.ar/research/microwave-laboratory/}{research group} in October 2016 that it was working on UWB systems. I was a member of the team designing a general purpose UWB transceiver. Within that group, I had the opportunity to work with RF circuit design experts, and be exposed to new design techniques. \\
+
+%Finally, in 2019, I finished my M. Sc. Thesis named “Design, implementation and characterization of an analog front-end for a general purpose UWB receiver” at that research group.\\
+
+%Since August 2018 I have been working as modeling engineer at Allegro Microsystems, in one of the company’s R&D team. My work consists of characterization and simulation of micro-electronic devices (MOSFET, BJT, Capacitors, GMR/TMR, Hall sensors, among others) using commercial simulation software and python scripting. Additionally, I had to learn how to make wafer electrical and magnetic measurements with various techniques and automate the instruments with my own scripts. One of my most important achievements was a setup design to measure flicker noise in MOSFET transistors, produced by charge carrier traps located at silicon oxide interface.
+
+Since August 2018 I have been working as modeling engineer at \href{https://www.allegromicro.com/}{Allegro Microsystems}, in one of the company’s R\&D team. My work consists of characterization and simulation of micro-electronic devices (MOSFET, BJT, Capacitors, GMR/TMR, Hall sensors, among others) using commercial simulation software and python scripting. Additionally, I had to learn how to make wafer electrical and magnetic measurements with various techniques and automate the instruments with my own scripts. One of my most important achievements was a setup design to measure flicker noise in MOSFET transistors, produced by charge carrier traps located at silicon oxide interface.
+
+\medskip
+\cvsection{Experience}
+\nocite{*}
+\justifying
+\cvevent{\textbf{\href{https://www.allegromicro.com/}{Allegro Microsystems Argentina S.A.}}}{Modeling Engineer}{Aug 2018 -- present}{Buenos Aires City, Argentina}
+\begin{itemize}
+    \item Characterization and modeling of semiconductor devices
+    \item Python scripting for visualization and data analysis
+    \item Generation of automatic reports with Python
+    \item Analog circuits simulation using commercial simulation software
+    \item Lab. experience: DC, AC, magnetic and noise measurements on wafer
+\end{itemize}
+
+\small{
+\textbf{Technologies:} CMOS, HVCMOS, Bipolar, TMR/GMR, Hall Sensors \\
+\textbf{Key achievement:} Flicker Noise setup development and CMOS parasitic bipolar transistors modeling.
+}\\\\
+\cvtag{numpy}\cvtag{pandas}\cvtag{matplotlib}\cvtag{xarray}\cvtag{dask}\cvtag{pyside2}\cvtag{Jupyter}\cvtag{Git}\cvtag{GitLab}\cvtag{Matlab} \\
+
+\divider
+
+\cvevent{\textbf{\href{http://www.biodiagnostico.com.ar/}{Biodiagnóstico S.A.}}}{Field Service Engineer}{Aug 2015 -- Jul 2018}{Buenos Aires City, Argentina}
+\begin{itemize}
+    \item Repair and maintenance of clinical analysis instruments
+    \item Client support of 5+ lines of instruments
+    \item Certified courses in Argentina, Colombia, Chile, Italy and Uruguay
+\end{itemize}
+\small{
+\textbf{Technologies:} ELISA, ANA, IFA, HPLC, Real Time PCR \\
+\textbf{Brands:} BioRad, Inova, ELITechGroup, Siemens, Beckman Coulter \\
+\textbf{Key achievement:} Virtualization of old operative systems that don’t run in modern PCs. \\
+}
+
+\end{document}
